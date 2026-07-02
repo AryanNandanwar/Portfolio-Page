@@ -7,6 +7,8 @@ A single-page developer portfolio showcasing selected projects:
 - **[NephroSense AI](https://github.com/AryanNandanwar/NephroSense-AI)** — CKD risk prediction
 - **[Subscart](https://github.com/AryanNandanwar/Subscart-)** — Meal subscription slot management
 - **[Travel CRM](https://github.com/AryanNandanwar/Travel-CRM)** — Travel agency CRM
+- **Cloud Cost & Observability Automator** (2026) — AWS cost optimization and Prometheus/Grafana monitoring
+- **Automated Server Configuration Pipeline** (2026) — Ansible-based Ubuntu provisioning and hardening
 
 ## Run locally
 
