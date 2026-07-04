@@ -55,7 +55,7 @@
           </div>
           <div>
             <dt>Projects</dt>
-            <dd>7 featured builds</dd>
+            <dd>5 builds · 1 in production</dd>
           </div>
           <div>
             <dt>Location</dt>
@@ -63,17 +63,17 @@
           </div>
         </dl>
       </div>
-      <div class="hero-visual" aria-hidden="true">
+      <div class="hero-visual">
         <div class="orbit">
-          <div class="orbit-ring ring-1"></div>
-          <div class="orbit-ring ring-2"></div>
-          <div class="orbit-core">
-            <span>AI</span>
+          <div class="orbit-ring ring-1" aria-hidden="true"></div>
+          <div class="orbit-ring ring-2" aria-hidden="true"></div>
+          <div class="orbit-core profile-photo">
+            <img src="assets/profile.jpg" alt="Aryan Nandanwar" width="180" height="180" />
           </div>
-          <div class="orbit-node node-1">React</div>
-          <div class="orbit-node node-2">Python</div>
-          <div class="orbit-node node-3">Node</div>
-          <div class="orbit-node node-4">LLM</div>
+          <div class="orbit-node node-1" aria-hidden="true">React</div>
+          <div class="orbit-node node-2" aria-hidden="true">Python</div>
+          <div class="orbit-node node-3" aria-hidden="true">Node</div>
+          <div class="orbit-node node-4" aria-hidden="true">LLM</div>
         </div>
       </div>
     </section>
@@ -100,35 +100,67 @@
 
     <section id="projects" class="section projects">
       <div class="section-header">
-        <span class="section-label">Selected work</span>
-        <h2>Projects</h2>
-        <p class="section-desc">Production systems, open-source repos, and platform builds.</p>
+        <span class="section-label">Featured work</span>
+        <h2>EchoAide</h2>
+        <p class="section-desc">Production AI platform for outpatient clinical documentation.</p>
       </div>
 
-      <div class="project-grid">
-        <article class="project-card featured" data-reveal>
-          <div class="project-meta">
+      <article class="featured-spotlight" data-reveal>
+        <div class="featured-spotlight-header">
+          <div class="featured-spotlight-meta">
             <span class="project-badge">Production · Healthcare AI</span>
             <h3>EchoAide</h3>
             <p class="project-alias">doctorscribe-prod</p>
           </div>
-          <p class="project-desc">
-            AI-powered clinical documentation platform that assists healthcare
-            providers with medical scribing — turning patient encounters into
-            structured, accurate clinical notes. Built for real-world clinical
-            workflows in production.
-          </p>
-          <ul class="tag-list">
-            <li>AI / NLP</li>
-            <li>Healthcare</li>
-            <li>Production</li>
-            <li>Clinical Workflows</li>
-          </ul>
-          <div class="project-links">
-            <a href="https://www.loom.com/share/d81c882c16ef4079be582e4d605a4ce6" target="_blank" rel="noopener noreferrer">Watch demo →</a>
+          <div class="featured-spotlight-links">
+            <a class="btn btn-primary" href="https://www.loom.com/share/d81c882c16ef4079be582e4d605a4ce6" target="_blank" rel="noopener noreferrer">Watch demo</a>
           </div>
-        </article>
+        </div>
 
+        <p class="featured-spotlight-lead">
+          Built a production AI platform for outpatient clinics that generates clinical notes
+          from doctor-patient conversations, reducing documentation time compared to
+          manual note-taking.
+        </p>
+
+        <ul class="featured-highlights">
+          <li>
+            Engineered a real-time transcription pipeline using Socket.IO and Soniox Streaming STT,
+            reducing note generation latency by 90% compared to the previous batch-processing workflow.
+          </li>
+          <li>
+            Integrated Claude Sonnet (AWS Bedrock) with a few-shot prompting strategy to generate
+            structured clinical notes, improving note completeness.
+          </li>
+          <li>
+            Implemented patient intake queues, historical note retrieval, and role-based access
+            control, reducing consultation setup time.
+          </li>
+          <li>
+            Deployed the platform using Docker, Nginx, and my Ubuntu virtual machine hosted on OCI,
+            enabling secure production usage and zero-downtime releases.
+          </li>
+        </ul>
+
+        <ul class="tag-list">
+          <li>Socket.IO</li>
+          <li>Soniox STT</li>
+          <li>Claude Sonnet</li>
+          <li>AWS Bedrock</li>
+          <li>Docker</li>
+          <li>Nginx</li>
+          <li>OCI</li>
+        </ul>
+      </article>
+
+      <div class="projects-subsection">
+        <div class="section-header">
+          <span class="section-label">More projects</span>
+          <h2>Open source &amp; other builds</h2>
+        </div>
+      </div>
+
+      <div class="project-grid">
         <article class="project-card" data-reveal>
           <div class="project-meta">
             <span class="project-badge">LLM Infrastructure</span>
@@ -215,50 +247,6 @@
             <a href="https://github.com/AryanNandanwar/Travel-CRM" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
           </div>
         </article>
-
-        <article class="project-card" data-reveal>
-          <div class="project-meta">
-            <span class="project-badge">Cloud · Cost Optimization</span>
-            <h3>Cloud Cost &amp; Observability Automator</h3>
-            <p class="project-alias">2026</p>
-          </div>
-          <p class="project-desc">
-            Python automation engine that integrates with cloud provider APIs to surface
-            orphaned volumes, idle load balancers, and unattached IPs — generating
-            automated cost-optimization reports. Ships with a Docker Compose observability
-            stack using Prometheus and Grafana for proactive resource and system health
-            monitoring.
-          </p>
-          <ul class="tag-list">
-            <li>Python</li>
-            <li>Prometheus</li>
-            <li>Grafana</li>
-            <li>AWS APIs</li>
-            <li>Docker</li>
-          </ul>
-        </article>
-
-        <article class="project-card" data-reveal>
-          <div class="project-meta">
-            <span class="project-badge">Infrastructure · Automation</span>
-            <h3>Automated Server Configuration Pipeline</h3>
-            <p class="project-alias">2026</p>
-          </div>
-          <p class="project-desc">
-            Ansible playbooks that fully automate Ubuntu server provisioning and
-            configuration — eliminating manual setup and enforcing environment
-            consistency. Hardens infrastructure with SSH key authentication, disabled
-            root access, and UFW firewall rules, then deploys Docker and observability
-            agents for a standardized, production-ready baseline.
-          </p>
-          <ul class="tag-list">
-            <li>Ansible</li>
-            <li>Ubuntu</li>
-            <li>Docker</li>
-            <li>SSH</li>
-            <li>UFW</li>
-          </ul>
-        </article>
       </div>
     </section>
 
@@ -269,41 +257,34 @@
       </div>
       <div class="skills-grid">
         <div class="skill-group" data-reveal>
-          <h3>Frontend</h3>
+          <h3>Web</h3>
           <ul>
             <li>React</li>
-            <li>JavaScript / TypeScript</li>
-            <li>HTML &amp; CSS</li>
-            <li>Flutter</li>
+            <li>Next.js</li>
+            <li>FastAPI</li>
+            <li>NestJS (Node.js)</li>
           </ul>
         </div>
         <div class="skill-group" data-reveal>
-          <h3>Backend</h3>
+          <h3>AI</h3>
           <ul>
-            <li>Node.js &amp; Express</li>
-            <li>Python &amp; Flask</li>
-            <li>REST APIs</li>
-            <li>SSE / Streaming</li>
+            <li>LangChain</li>
+            <li>LangGraph</li>
           </ul>
         </div>
         <div class="skill-group" data-reveal>
-          <h3>Data &amp; AI</h3>
+          <h3>DBs</h3>
           <ul>
-            <li>PostgreSQL &amp; Prisma</li>
+            <li>PostgreSQL (Supabase)</li>
             <li>MongoDB</li>
-            <li>Machine Learning</li>
-            <li>LLM Integration</li>
           </ul>
         </div>
         <div class="skill-group" data-reveal>
-          <h3>DevOps</h3>
+          <h3>Infra</h3>
           <ul>
-            <li>Docker &amp; Compose</li>
-            <li>Kubernetes</li>
-            <li>Ansible</li>
-            <li>Prometheus &amp; Grafana</li>
             <li>AWS</li>
-            <li>Git</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
           </ul>
         </div>
       </div>

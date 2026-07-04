@@ -2,13 +2,19 @@
 
 A single-page developer portfolio showcasing selected projects:
 
-- **EchoAide** (doctorscribe-prod) — AI clinical documentation ([demo](https://www.loom.com/share/d81c882c16ef4079be582e4d605a4ce6))
+## Featured
+
+- **EchoAide** (doctorscribe-prod) — Production AI platform for outpatient clinics that generates clinical notes from doctor-patient conversations ([demo](https://www.loom.com/share/d81c882c16ef4079be582e4d605a4ce6))
+  - Real-time transcription via Socket.IO and Soniox Streaming STT (90% latency reduction vs batch processing)
+  - Claude Sonnet on AWS Bedrock with few-shot prompting for structured clinical notes
+  - Patient intake queues, historical note retrieval, and role-based access control
+  - Deployed with Docker, Nginx, and OCI-hosted Ubuntu VM for zero-downtime releases
+
+## Other projects
 - **Agent Inference Platform** — LLM chatbot with inference logging ([GitHub](https://github.com/AryanNandanwar/Ollive-AI))
 - **[NephroSense AI](https://github.com/AryanNandanwar/NephroSense-AI)** — CKD risk prediction
 - **[Subscart](https://github.com/AryanNandanwar/Subscart-)** — Meal subscription slot management
 - **[Travel CRM](https://github.com/AryanNandanwar/Travel-CRM)** — Travel agency CRM
-- **Cloud Cost & Observability Automator** (2026) — AWS cost optimization and Prometheus/Grafana monitoring
-- **Automated Server Configuration Pipeline** (2026) — Ansible-based Ubuntu provisioning and hardening
 
 ## Run locally
 
