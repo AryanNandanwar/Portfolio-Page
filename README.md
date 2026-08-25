@@ -10,6 +10,14 @@ A single-page developer portfolio showcasing selected projects:
   - Patient intake queues, historical note retrieval, and role-based access control
   - Deployed with Docker, Nginx, and OCI-hosted Ubuntu VM for zero-downtime releases
 
+## Open source contributions
+
+- **Nanocoder** (2026) — Open-source AI coding assistant ([GitHub](https://github.com/Nano-Collective/nanocoder))
+  - CLI performance, ACP integration, and agent tooling
+  - Headless ACP execution path that defers Ink.js and TUI loading for non-interactive sessions, with ACP startup benchmarks
+  - Visual Action Timeline for inspecting tool calls and time-traveling to checkpoints
+  - Keyboard-driven `/copy` and `/copy code` workflows in the VS Code chat extension
+
 ## Other projects
 - **Agent Inference Platform** — LLM chatbot with inference logging ([GitHub](https://github.com/AryanNandanwar/Ollive-AI))
 - **[NephroSense AI](https://github.com/AryanNandanwar/NephroSense-AI)** — CKD risk prediction
