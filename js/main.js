@@ -11,7 +11,7 @@
       toggle.setAttribute("aria-expanded", String(open));
     });
 
-    nav.querySelectorAll(".nav-links a").forEach((link) => {
+    nav.querySelectorAll(".nav-end a").forEach((link) => {
       link.addEventListener("click", () => {
         nav.classList.remove("open");
         toggle.setAttribute("aria-expanded", "false");
